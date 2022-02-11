@@ -1,0 +1,14 @@
+.painel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.painel_detalhe {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    min-height: 110px;
+    width: 25%;
+    padding: 1em;
+}

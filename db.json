@@ -1,0 +1,44 @@
+{
+    "cooperados": [
+        {
+            "id": 1,
+            "nome": "Beverly Timóteo",
+            "cpf": "13329491000",
+            "situacao_cpf": "Regular",
+            "conta": [
+                {
+                    "id": 1,
+                    "tipo": "aplicação",
+                    "instituicao": "Cooperativa Viacredi",
+                    "numero": "123456"
+                },
+                {
+                    "id": 2,
+                    "tipo": "corrente",
+                    "instituicao": "Cooperativa Viacredi",
+                    "numero": "456789"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Sophia",
+            "cpf": "66446759053",
+            "situacao_cpf": "Regular",
+            "conta": [
+                {
+                    "id": 1,
+                    "tipo": "aplicação",
+                    "instituicao": "Cooperativa Viacredi",
+                    "numero": "123456"
+                },
+                {
+                    "id": 2,
+                    "tipo": "corrente",
+                    "instituicao": "Cooperativa Viacredi",
+                    "numero": "456789"
+                }
+            ]
+        }
+    ]
+}

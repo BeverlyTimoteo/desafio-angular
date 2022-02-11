@@ -1,0 +1,26 @@
+<div class="painel">
+    <mat-card class="painel_detalhe">
+        <mat-card-title>Situação cadastral do CPF</mat-card-title>
+        <mat-card-subtitle>Consulta na Receita Federal</mat-card-subtitle>
+        <mat-card-content>
+            <label>Nome</label>
+            <p>{{ cooperado?.nome }}</p>
+            <label>Situação do CPF</label>
+            <p>{{ cooperado?.situacao_cpf }}</p>
+        </mat-card-content>
+    </mat-card>
+
+    <ng-container *ngFor="let item of cooperado.conta">
+        <mat-card class="painel_detalhe">
+            <mat-card-title>Conta {{item.tipo}}</mat-card-title>
+            <mat-card-subtitle>{{ item.instituicao }}</mat-card-subtitle>
+            <mat-card-content>
+                <label>Número da Conta</label>
+                <p>{{ item?.numero }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-stroked-button>Duplicar conta</button>
+            </mat-card-actions>
+        </mat-card>
+    </ng-container>
+</div>

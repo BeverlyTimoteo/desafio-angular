@@ -1,0 +1,15 @@
+<div>
+    <h3> Informe o CPF do futuro cooperado (a)</h3>
+    <form [formGroup]="consultarCpf" (submit)="consultar()">
+        <div>
+            <mat-form-field>
+                <mat-label>CPF</mat-label>
+                <input type="text" autocomplete="off" formControlName="cpf" matInput placeholder="CPF" maxlength="11">
+            </mat-form-field>
+            <button style="margin-left: 10px;" type="submit" [disabled]="!consultarCpf.valid"
+                mat-stroked-button>Consultar por CPF</button>
+        </div>
+    </form>
+</div>
+<br>
+<router-outlet></router-outlet>
